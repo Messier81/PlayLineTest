@@ -1,5 +1,7 @@
 body {
   background-color: #012146;
+  font-family: "SF Pro Display Light", Helvetica, Arial, sans-serif;
+  justify-content: center;
 }
 
 /* Logo */
@@ -76,11 +78,37 @@ hr {
   width: 35%;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .example {
-    background: green;
-  }
+/* Bot navigation bar */
+.bot-nav {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  background-color: #012044;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  display: flex;
+  width: 710px;
+  justify-content: center;
+  font-size: 14px;
 }
 
-/* Bot navigation bar */
+.bot-nav > div {
+  padding: 10px 0px;
+}
+
+.bot-nav > div > a {
+  color: #a1a1a1;
+  border-right: 1px solid #a1a1a1;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.bot-nav > div:last-of-type a {
+  border-right: unset;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: @screen-sm-min) {
+  .body {
+    background-color: red;
+  }
+}

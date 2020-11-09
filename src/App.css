@@ -4,11 +4,11 @@ body {
 
 /* Logo */
 .main-logo-container {
-  padding-top: 6%;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 /* Main Section */
-
 @font-face {
   font-family: "fontThatTookMeTooLongToFind";
   font-style: normal;
@@ -18,11 +18,69 @@ body {
 }
 
 .main-section-container {
-  background-color: white;
-  padding-top: 2%;
+  background-color: #f8f8f8;
+  padding-top: 20px;
   border-radius: 25px;
-  width: 50%;
-  font-size: 3.5vw;
+  width: 500px;
   margin: 0 auto;
-  font-family: fontThatTookMeTooLongToFind;
 }
+
+.main-section-motive {
+  font-family: fontThatTookMeTooLongToFind;
+  font-size: 38px;
+  padding-top: 10px;
+  color: #464646;
+}
+
+.main-section-time {
+  font-family: fontThatTookMeTooLongToFind;
+  color: #878787;
+}
+
+.main-section-tip {
+  color: #686868;
+  font-size: 12px;
+}
+.main-section-buttons {
+  padding-top: 30px;
+}
+.main-section-button {
+  box-shadow: 0 0 3px #dddddd;
+  color: #686868;
+  font-weight: 500;
+  border-radius: 25px;
+  border: 1px solid #dddddd;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 150px;
+}
+.main-section-buttons-notifyme-icon,
+.main-section-buttons-deposit-icon {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.main-section-download {
+  color: #686868;
+  font-weight: 600;
+}
+.main-section-download-logos {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.main-section-download-logo {
+  margin-right: 10px;
+  margin-right: 10px;
+}
+/* The horizontal rule, because this is simpler and built in */
+hr {
+  width: 35%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Bot navigation bar */

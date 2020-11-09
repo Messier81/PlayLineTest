@@ -4,6 +4,25 @@ body {
 
 /* Logo */
 .main-logo-container {
-  text-align: center;
-  background-color: rebeccapurple;
+  padding-top: 6%;
+}
+
+/* Main Section */
+
+@font-face {
+  font-family: "fontThatTookMeTooLongToFind";
+  font-style: normal;
+  font-weight: normal;
+  src: local("fontThatTookMeTooLongToFind"),
+    url("./fonts/MorganPosterAvec-Bold.otf") format("truetype");
+}
+
+.main-section-container {
+  background-color: white;
+  padding-top: 2%;
+  border-radius: 25px;
+  width: 50%;
+  font-size: 3.5vw;
+  margin: 0 auto;
+  font-family: fontThatTookMeTooLongToFind;
 }

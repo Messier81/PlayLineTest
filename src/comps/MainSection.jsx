@@ -1,8 +1,10 @@
-import ProgressBar from "../../assets/icons/progress.svg";
-import NotifyMe from "../../assets/icons/notify-me.svg";
-import Deposit from "../../assets/icons/money-bag.svg";
-import AndroidLogo from "../../assets/icons/google-play.svg";
-import AppleLogo from "../../assets/icons/ios-app.svg";
+import ProgressBar from "../assets/icons/progress.svg";
+import NotifyMe from "../assets/icons/notify-me.svg";
+import Deposit from "../assets/icons/money-bag.svg";
+import AndroidLogo from "../assets/icons/google-play.svg";
+import AppleLogo from "../assets/icons/ios-app.svg";
+
+import Players from "./Players";
 
 export default function Logo() {
   return (
@@ -21,7 +23,9 @@ export default function Logo() {
         Pro Tip: You can manage your PlayLines until they go live in the
         Upcoming area.
       </div>
-      <div>THIS IS WHERE WHERE SCORES GO</div>
+      <div>
+        <Players />
+      </div>
       <div className="main-section-buttons">
         <button type="button" className="btn btn-default main-section-button">
           <img

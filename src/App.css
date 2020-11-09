@@ -110,6 +110,18 @@ hr {
 .bot-nav-link-container:last-of-type a {
   border-right: unset;
 }
+
+/* Player images and info */
+.player-image {
+  width: 50px;
+  margin: -5px;
+  position: relative;
+  height: 50px;
+  border: 2px solid white;
+  background: #f5f5f5;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 767px) {
   .bot-nav {

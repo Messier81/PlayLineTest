@@ -1,19 +1,45 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+
+// Players
+import James from "../assets/headshots/Lebron-James-PLP59D7092A6F6CEv2.png";
+import Davis from "../assets/headshots/Anthony-Davis-PLP59D70938C0B3Ev2.png";
+import Gordon from "../assets/headshots/Aaron Gordon -PLP59D7092156491v2.png";
+import Siakam from "../assets/headshots/Pascal-Siakam-PLP59D70927CC6DD.png";
+import Leonard from "../assets/headshots/Kawhi-Leonard-PLP59D7093A107E7v2.png";
+import Lowry from "../assets/headshots/Kyle-Lowry-PLP59D70927DF104.png";
+import Russell from "../assets/headshots/Dangelo Russell PLP59D709255D994v4.png";
+
+import PlayerImg from "./PlayerImg";
+
 export default function GetPlayers() {
-  let [players, setPlayers] = useState([]);
+  let [playersData, setPlayersData] = useState([]);
+  const indPlayer = [James, Davis, Gordon, Siakam, Leonard, Lowry, Russell];
 
   useEffect(() => {
     axios
       .get(
         "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json"
       )
-      .then((response) => setPlayers(response.data));
+      .then((response) => setPlayersData(response.data));
   }, []);
 
   return (
-    <div className="xxx">
-      <code>{JSON.stringify(players)}</code>
+    <div className="players-container">
+      <div className="player-images">
+        {playersData.players
+          ? playersData.players.map((e, i) => {
+              return (
+                <PlayerImg
+                  zindex={10 - i}
+                  player={indPlayer[i]}
+                  name={e.name}
+                  key={i}
+                />
+              );
+            })
+          : null}
+      </div>
     </div>
   );
 }

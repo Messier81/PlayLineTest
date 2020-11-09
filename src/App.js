@@ -11,7 +11,6 @@ function App() {
       <Logo />
       <MainSection />
       <BotNav/>
-      <GetPlayers/>
     </div>
   );
 }

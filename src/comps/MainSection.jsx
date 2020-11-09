@@ -4,7 +4,8 @@ import Deposit from "../assets/icons/money-bag.svg";
 import AndroidLogo from "../assets/icons/google-play.svg";
 import AppleLogo from "../assets/icons/ios-app.svg";
 
-import Players from "./Players";
+import GetPlayers from "./GetPlayers";
+import PlayerNames from "./PlayerNames";
 
 export default function Logo() {
   return (
@@ -24,7 +25,8 @@ export default function Logo() {
         Upcoming area.
       </div>
       <div>
-        <Players />
+        <GetPlayers />
+        <PlayerNames />
       </div>
       <div className="main-section-buttons">
         <button type="button" className="btn btn-default main-section-button">

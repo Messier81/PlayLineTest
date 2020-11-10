@@ -1,4 +1,4 @@
-import James from "../assets/headshots/Lebron-James-PLP59D7092A6F6CEv2.png";
+//View for the player
 
 export default function Player(props) {
   return (

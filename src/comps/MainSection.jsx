@@ -5,11 +5,11 @@ import AndroidLogo from "../assets/icons/google-play.svg";
 import AppleLogo from "../assets/icons/ios-app.svg";
 
 import GetPlayers from "./GetPlayers";
-
+// General template, should be broken down to simpler ones if more functionality is added!!
 export default function Logo() {
   return (
     <div className="main-section-container">
-      <img
+      <img //Responsive progress bar
         src={ProgressBar}
         className="img-responsive main-logo"
         alt="Progress Bar"

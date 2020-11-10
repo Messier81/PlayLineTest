@@ -17,6 +17,7 @@ export default function GetPlayers() {
   const indPlayer = [James, Davis, Gordon, Siakam, Leonard, Lowry, Russell];
 
   useEffect(() => {
+    //Get the players, BLOCKED by CORS
     axios
       .get(
         "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json"

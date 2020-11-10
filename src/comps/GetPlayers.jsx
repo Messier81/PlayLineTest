@@ -10,7 +10,7 @@ import Leonard from "../assets/headshots/Kawhi-Leonard-PLP59D7093A107E7v2.png";
 import Lowry from "../assets/headshots/Kyle-Lowry-PLP59D70927DF104.png";
 import Russell from "../assets/headshots/Dangelo Russell PLP59D709255D994v4.png";
 
-import PlayerImg from "./PlayerImg";
+import Player from "./Player";
 
 export default function GetPlayers() {
   let [playersData, setPlayersData] = useState([]);
@@ -29,12 +29,13 @@ export default function GetPlayers() {
       {playersData.players
         ? playersData.players.map((e, i) => {
             return (
-              <PlayerImg
+              <Player
                 zindex={10 - i}
                 player={indPlayer[i]}
                 altname={e.last_name}
                 key={i}
                 playername={e.last_name}
+                score={e.points}
               />
             );
           })

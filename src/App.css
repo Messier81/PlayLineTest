@@ -43,7 +43,7 @@ body {
   font-size: 12px;
 }
 .main-section-buttons {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .main-section-button {
   box-shadow: 0 0 3px #dddddd;
@@ -54,6 +54,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   width: 150px;
+  padding-bottom: 10px;
 }
 .main-section-buttons-notifyme-icon,
 .main-section-buttons-deposit-icon {
@@ -63,6 +64,7 @@ body {
 .main-section-download {
   color: #686868;
   font-weight: 600;
+  font-size: 13px;
 }
 .main-section-download-logos {
   padding-top: 20px;
@@ -127,9 +129,50 @@ hr {
 }
 .player-data-main {
   display: inline-block;
+  padding-top: 30px;
 }
 .player-name {
+  padding-top: 15px;
   font-size: 10px;
+  color: #5a5a5a;
+  font-weight: 300;
+  letter-spacing: 0;
+  font-family: "SF Pro Display Regular", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.player-pts {
+  margin-top: 8px;
+  font-size: 16px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-left: 8px;
+  border: 0.75px solid #e0e0e0;
+  background-color: #f0f0f0;
+  position: relative;
+}
+.player-pts-inside {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 94%;
+  height: 94%;
+  top: 3%;
+  left: 3%;
+  padding-top: 2px;
+  border: 0.75px solid #e0e0e0;
+  font-family: fontThatTookMeTooLongToFind;
+  font-weight: 300;
+  color: #4a4a4a;
+  position: relative;
+}
+.player-pts-sign {
+  margin-left: 8px;
+  color: #737373;
+  font-family: "SF Pro Display Light", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  padding-top: 4px;
+  max-width: 35px;
+  line-height: 10px;
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 767px) {

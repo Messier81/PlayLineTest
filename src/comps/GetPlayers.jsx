@@ -26,20 +26,19 @@ export default function GetPlayers() {
 
   return (
     <div className="players-container">
-      <div className="player-images">
-        {playersData.players
-          ? playersData.players.map((e, i) => {
-              return (
-                <PlayerImg
-                  zindex={10 - i}
-                  player={indPlayer[i]}
-                  name={e.name}
-                  key={i}
-                />
-              );
-            })
-          : null}
-      </div>
+      {playersData.players
+        ? playersData.players.map((e, i) => {
+            return (
+              <PlayerImg
+                zindex={10 - i}
+                player={indPlayer[i]}
+                altname={e.last_name}
+                key={i}
+                playername={e.last_name}
+              />
+            );
+          })
+        : null}
     </div>
   );
 }

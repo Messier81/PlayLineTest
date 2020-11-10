@@ -5,7 +5,6 @@ import AndroidLogo from "../assets/icons/google-play.svg";
 import AppleLogo from "../assets/icons/ios-app.svg";
 
 import GetPlayers from "./GetPlayers";
-import PlayerNames from "./PlayerNames";
 
 export default function Logo() {
   return (
@@ -26,7 +25,6 @@ export default function Logo() {
       </div>
       <div>
         <GetPlayers />
-        <PlayerNames />
       </div>
       <div className="main-section-buttons">
         <button type="button" className="btn btn-default main-section-button">

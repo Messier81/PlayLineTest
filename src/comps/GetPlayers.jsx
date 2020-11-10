@@ -20,7 +20,8 @@ export default function GetPlayers() {
     //Get the players, BLOCKED by CORS
     axios
       .get(
-        "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json"
+        // To avoid CORS https://cors-anywhere.herokuapp.com/ is used
+        "https://cors-anywhere.herokuapp.com/https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json"
       )
       .then((response) => setPlayersData(response.data));
   }, []);
